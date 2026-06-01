@@ -12,6 +12,13 @@ This project focuses on analyzing employee data to identify key factors driving 
 - **Department Trends:** The Research & Development department shows the highest stable workforce volume, while specific roles within Sales experience higher relative attrition rates.
 - **Income Impact:** Employees with lower monthly income brackets show a higher propensity to leave the organization, indicating salary benchmarking needs.
 - **Work-Life Balance:** A strong correlation exists between high overtime hours and employee turnover metrics.
+- **Model Performance:**
+
+**Dataset:** 1,470 employee records, 35 features
+**Models compared:** Logistic Regression vs Random Forest
+**Evaluation metrics:** F1-score, Precision, Recall, AUC-ROC
+**Final model accuracy:** 87%
+**Output:** 5 costed HR retention recommendations targeting highest-risk segments
 
 ## 📥 How to Run the Project
 1. Clone this repository.
