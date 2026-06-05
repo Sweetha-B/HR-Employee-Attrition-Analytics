@@ -1,26 +1,44 @@
-# HR Employee Attrition & Analytics Dashboard
+#  HR Employee Attrition Prediction
 
-## 📌 Project Overview
-This project focuses on analyzing employee data to identify key factors driving workforce attrition. By combining the data manipulation power of Python with the interactive visualization capabilities of Power BI, this dashboard uncovers trends related to departments, income levels, and work-life balance to help HR teams improve employee retention.
+ML-based HR analytics system predicting employee attrition
+with actionable retention strategy recommendations.
 
-## 🛠️ Tech Stack & Tools
-- **Data Processing:** Python (Pandas)
-- **Data Visualization:** Seaborn, Matplotlib, Power BI Desktop
-- **Dataset:** HR-Employee-Attrition (1,470 employee records)
+## Tech Stack
+Python · Scikit-learn · Pandas · Seaborn · SQL · Logistic Regression · Random Forest
 
-## 🔍 Key Insights Discovered
-- **Department Trends:** The Research & Development department shows the highest stable workforce volume, while specific roles within Sales experience higher relative attrition rates.
-- **Income Impact:** Employees with lower monthly income brackets show a higher propensity to leave the organization, indicating salary benchmarking needs.
-- **Work-Life Balance:** A strong correlation exists between high overtime hours and employee turnover metrics.
-- **Model Performance:**
+## Features
+- Deep EDA across 35 employee features
+- Statistical analysis with Seaborn visualisations
+- Logistic Regression and Random Forest comparison
+- 87% model accuracy achieved
+- 5 costed HR retention strategy recommendations
 
-**Dataset:** 1,470 employee records, 35 features
-**Models compared:** Logistic Regression vs Random Forest
-**Evaluation metrics:** F1-score, Precision, Recall, AUC-ROC
-**Final model accuracy:** 87%
-**Output:** 5 costed HR retention recommendations targeting highest-risk segments
+## Project Structure
+```text
+├── data/
+│   └── ibm_hr_analytics.csv     # IBM HR dataset
+├── notebooks/
+│   └── attrition_analysis.ipynb # Full analysis notebook
+├── models/
+│   ├── logistic_model.pkl       # Trained LR model
+│   └── rf_model.pkl             # Trained RF model
+└── reports/
+    └── hr_retention_strategy.pdf
+```
 
-## 📥 How to Run the Project
-1. Clone this repository.
-2. Run the `Employee.ipynb` notebook in VS Code to see the data processing pipeline.
-3. Open the `HR_Analytics.pbix` file in Power BI Desktop to interact with the dashboard live.
+## Analysis Flow
+1. Data Loading: IBM HR Analytics dataset (35 features)
+2. EDA: Statistical analysis and Seaborn visualisations
+3. Feature Selection: Top 3 attrition predictors identified
+4. Model Training: Logistic Regression vs Random Forest
+5. Evaluation: F1-score, Precision, Recall comparison
+6. Recommendations: 5 costed HR retention strategies
+
+## Key Results
+- Top predictors: Salary band, Department, Job satisfaction
+- Model accuracy: 87%
+- F1-score evaluated on test set
+- 5 specific retention strategies with cost estimates
+
+## Contact
+Sweetha B | sweethab99@gmail.com 
